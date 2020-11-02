@@ -7,7 +7,20 @@ con el video
 
 
 
-----Requerimientos
-1) Sistema play y stop desde todos los clientes sin desfase con websockets
-2) 80% de pantalla, centrado horizontal y verticalmente
-3) Publicar en git
+----Descripcion
+1) Sistema play y stop desde todos los clientes sin desfase con websockets  (OK)
+2) 80% de pantalla, centrado horizontal y verticalmente (OK)
+
+----Guia Implementacion
+1) Publicar Git (OK)
+2) readme
+    *Falta relevar dependencias node modules
+3) Backend NodeJS (OK)
+4) Video en loop (OK)
+5) Parsear de ES6+ a ES5 (OK)
+
+----Bonus
+1) Test unitarios y e2e con Jest y Cypress o NightwatchJs (TODO)
+2) Responsive design (ya esta centrado)
+3) Permitir adelantar o retroceder el video (TODO)
+4) Publicar en Heroku o Now.sh (OK)
