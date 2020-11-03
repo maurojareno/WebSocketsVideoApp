@@ -2,10 +2,11 @@
   "name": "websocketsvideoapp",
   "version": "1.0.0",
   "description": "websocketsvideoapp",
-  "main": "server.js",
+  "main": "srcCompiled/server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon --exec babel-node server.mjs"
+    "start":"npm run build && node srcCompiled/server.js",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "build" : "babel src -d srcCompiled"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,6 @@
   },
   "homepage": "https://github.com/maurojareno/WebSocketsVideoApp#readme",
   "dependencies": {
-    "@babel/core": "^7.12.3",
     "@babel/node": "^7.12.1",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -28,8 +28,9 @@
     "socket.io-stream": "^0.9.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "nodemon": "^2.0.6"
   }
-  
 }
