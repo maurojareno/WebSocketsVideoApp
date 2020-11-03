@@ -1,15 +1,16 @@
 # WebSocketsVideoApp
 
-
-
 ### Installation
 
 Dependencias
 
-npm install express
-npm install socket.io
-npm install @babel/core @babel/node @babel/preset-env
+npm install nodemon socket.io express @babel/node @babel/preset-env @babel/cli @babel/core
 
-### Runner
+### Local
 
 npm run dev
+
+### Server
+
+npm run build
+npm run start
